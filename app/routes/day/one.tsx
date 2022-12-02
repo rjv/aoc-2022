@@ -14,7 +14,6 @@ export async function loader() {
 
 export default function One() {
   const result = useLoaderData();
-  console.log(result);
 
   return (
     <div>
@@ -23,6 +22,14 @@ export default function One() {
       <p>Answer: {result.partOne}</p>
       <h2>Challenge 2</h2>
       <p>Answer: {result.partTwo}</p>
+      <hr />
+      <p>
+        <em>
+          <a href="https://github.com/rjv/aoc-2022/blob/main/app/routes/day/one.tsx">
+            Day 1 solution
+          </a>
+        </em>
+      </p>
     </div>
   );
 }
